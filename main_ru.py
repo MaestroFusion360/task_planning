@@ -18,7 +18,7 @@ from pathlib import Path
 import hashlib, uuid
 import markdown, webbrowser
 
-__version__ = "0.2.8"
+__version__ = "1.0.0"
 
 
 class LicenseChecker:
@@ -1869,7 +1869,7 @@ class App:
         """Открытие руководства пользователя"""
         # Получаем путь к текущему скрипту и строим путь к файлу README.md
         current_directory = Path(__file__).parent
-        file_path = f"{current_directory}/README_RU.md"
+        file_path = f"{current_directory}/docs/README_RU.md"
 
         if Path(file_path).exists():
             # subprocess.Popen(["notepad.exe", str(file_path)])  # Открыть в Notepad
