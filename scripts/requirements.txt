@@ -1,0 +1,6 @@
+tkcalendar
+pandas
+matplotlib
+openpyxl
+markdown
+auto-py-to-exe
