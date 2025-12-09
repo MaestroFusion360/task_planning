@@ -10,3 +10,7 @@ This project contains documentation in multiple languages. You can choose your p
 ## License
 
 MIT License - See [LICENSE](License.md) for details
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=MaestroFusion360-task-planning&label=Project+Views&color=blue" alt="Project Views" />
+</p>
