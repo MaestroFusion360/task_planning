@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog, simpledialog
 from tkcalendar import DateEntry
-import json, csv, re
+import json, csv, re, sys
 
 # import subprocess
 import pandas as pd
@@ -18,7 +18,7 @@ from pathlib import Path
 import hashlib, uuid
 import markdown, webbrowser
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 
 class LicenseChecker:
@@ -1867,15 +1867,18 @@ class App:
 
     def open_user_guide(self):
         """Открытие руководства пользователя"""
-        # Получаем путь к текущему скрипту и строим путь к файлу README.md
-        current_directory = Path(__file__).parent
-        file_path = f"{current_directory}/docs/README_RU.md"
-
-        if Path(file_path).exists():
-            # subprocess.Popen(["notepad.exe", str(file_path)])  # Открыть в Notepad
-            self.open_markdown_in_browser(file_path)  # Открыть в браузере
+        if getattr(sys, 'frozen', False):
+            base_path = Path(sys._MEIPASS)
         else:
-            messagebox.showerror("Ошибка", "Файл руководства не найден.")
+            base_path = Path(__file__).parent
+
+        file_path = base_path / "docs" / "README_RU.md"
+
+        if file_path.exists():
+            # subprocess.Popen(["notepad.exe", str(file_path)])  # Открыть в Notepad
+            self.open_markdown_in_browser(file_path) # Открыть в браузере
+        else:
+            messagebox.showerror("Error", f"User guide not found:\n{file_path}")
 
     def add_time(self):
         """Запрос времени на деталь"""

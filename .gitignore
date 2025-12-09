@@ -52,6 +52,5 @@ builds/
 # Sensitive files
 license.key
 settings.json
-auto-py-to-exe.json
 docs/README_EN.html
 docs/README_RU.html
