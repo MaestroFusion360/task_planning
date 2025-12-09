@@ -40,8 +40,8 @@
     - [Data Storage](#data-storage)
   - [8. License Agreement](#8-license-agreement)
     - [Usage Rights](#usage-rights)
-    - [Restrictions](#restrictions)
-    - [Warranties](#warranties)
+    - [Conditions](#conditions)
+    - [Disclaimer](#disclaimer)
 
 ---
 
@@ -506,24 +506,15 @@ A field for filtering rows in the tasks table.
 
 ### Usage Rights
 
-The program is provided under the **"Commercial License for 1 workstation"**.
-The license grants the right to use the software on one physical or virtual workstation for commercial purposes. Use is permitted only to one user at a time. Distribution, transfer to third parties, and installation on additional devices without a separate license are prohibited.
+The software is distributed under the **MIT License**.  
+The user is allowed to use the software for any purpose, including commercial. Copying, modifying, merging, publishing, distributing, sublicensing, and selling copies of the software are permitted.
 
-### Restrictions
+### Conditions
 
-It is prohibited to:
+The copyright notice and this permission notice must be included in all copies or substantial portions of the software.
 
-- Modify the program code.
-- Use the program for commercial purposes without a valid license.
-- Remove copyright information from the program.
+### Disclaimer
 
-### Warranties
-
-The program is provided "as is".
-The developer is not responsible for:
-
-- Data loss.
-- Indirect damages.
-- Incompatibility with other software.
+The software is provided "as is", without warranty of any kind, express or implied. The author is not liable for any claims, damages, or other liability arising from the use of the software.
 
 ---
