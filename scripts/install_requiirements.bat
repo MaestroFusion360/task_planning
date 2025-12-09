@@ -1,26 +1,26 @@
 @echo off
 
-:: Устанавливаем кодировку UTF-8
+:: Set UTF-8 encoding
 chcp 65001
 
-:: Проверка наличия requirements.txt
+:: Check for requirements.txt
 IF NOT EXIST "requirements.txt" (
-    echo requirements.txt не найден!
+    echo requirements.txt not found!
     exit /b 1
 )
 
-:: Проверка наличия виртуального окружения
+:: Check for virtual environment
 IF NOT EXIST "..\.venv" (
-    echo Виртуальное окружение не найдено, создаём его...
+    echo Virtual environment not found, creating it...
     python -m venv ..\.venv
 )
 
-:: Активация виртуального окружения
+:: Activate virtual environment
 call ..\.venv\Scripts\activate.bat
 
-:: Установка зависимостей
+:: Install dependencies
 pip install -r requirements.txt
 
-:: Задержка, чтобы окно не закрылось
-echo Виртуальное окружение активно. Для выхода используйте команду 'deactivate'.
+:: Pause to keep window open
+echo Virtual environment is active. Use 'deactivate' command to exit.
 pause
