@@ -1,4 +1,15 @@
-# Project Documentation - Language Selector
+# Planning
+
+Desktop app for visual production task planning and scheduling.
+
+<p align="center">
+  <div style="text-align: center;">
+    <img src="docs/assets/img9.png" alt="Image 4">
+    <p>Image 4</p>
+  </div>
+</p>
+
+## Project Documentation - Language Selector
 
 This project contains documentation in multiple languages. You can choose your preferred language below.
 
